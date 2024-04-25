@@ -1,0 +1,25 @@
+# .gitignore
+heatmaps/
+results/
+wsi_core/
+visual/
+
+models/model_mb.py
+
+dataset/dataset_survival_cptac.py
+dataset/extract_feature.py
+dataset/wsi_process.py
+
+dataset_csv/cptac*
+dataset_csv/t2c*
+
+splits/5foldcv/cptac*
+splits/5foldcv/t2c*
+
+trainer/mb_trainer.py
+utils/heatmap_utils.py
+*/__pycache__
+*.ipynb
+KM.py
+
+
