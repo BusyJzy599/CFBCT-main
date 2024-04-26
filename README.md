@@ -63,7 +63,7 @@ python ./dataset/extract_patches.py \
       dataset=$slide_dir \
       slide_dir=$slide_dir\
       tile_dir=$tile_dir \
-      tile_size=256 \
+      tile_size=256
 ```
 
 3. Using  the pre-trained truncated [CTransPath]( https://github.com/Xiyue-Wang/TransPath) to encode the raw image patches into 768-dimensional feature vectors.
@@ -78,7 +78,7 @@ python ./dataset/extract_tile_features.py \
       batch_size=$batch_size
 ```
 
-4. The extracted features go through using the following folder structure:
+4. The file structure involved in all processing is as follows:
 
 ````
 |──DATA_ROOT_DIR 											# The base directory of all datasets
@@ -125,7 +125,7 @@ To download molecular feature data and other clinical metadata, please refer to 
   > 5)  Transcription
   > 6)  Cytokines and Growth
 
-- **Pathways: **Other work was processed (e.g., [SurvPath](https://github.com/mahmoodlab/SurvPath)), i.e., utilizing Reactome and MSigDB Hallmarks pathway compositions, usually choosing pathways with more than 90% of the transcriptomics data.
+- **Pathways:** Other work was processed (e.g., [SurvPath](https://github.com/mahmoodlab/SurvPath)), i.e., utilizing Reactome and MSigDB Hallmarks pathway compositions, usually choosing pathways with more than 90% of the transcriptomics data.
 
 
 # Training-Validation Splits

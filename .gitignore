@@ -19,7 +19,11 @@ splits/5foldcv/t2c*
 trainer/mb_trainer.py
 utils/heatmap_utils.py
 */__pycache__
-*.ipynb
+
+Heatmap.ipynb
+KM.ipynb
+test.ipynb
+
 KM.py
 
 
