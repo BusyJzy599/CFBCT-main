@@ -1,5 +1,5 @@
 
-BASE_DIR="/mnt/jzy8T/jzy/TCGA"
+BASE_DIR="TCGA base dir"
 DATASET="BRCA"
 
 CUDA_VISIBLE_DEVICES=0 python main.py \

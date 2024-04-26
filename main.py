@@ -3,7 +3,7 @@ from utils.options import process_args
 import utils.options as options
 import os
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 import sys
 from timeit import default_timer as timer
 import numpy as np
@@ -16,10 +16,7 @@ from utils.utils import *
 import torch
 device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-"""sumary_line
 
-根据样本的不确定性进行权重的更改
-"""
 
 args = process_args()
 
@@ -28,7 +25,7 @@ ORGANIZE="TCGA" # TCGA; CPTAC
 # Dataset root dir
 BASE_DIR=f"/mnt/jzy8T/jzy/{ORGANIZE}"
 # Dataset: BLCA; BRCA; LUAD; UCEC; GBMLGG; COAD; HNSC; STAD; 
-DATASET="GBMLGG"  
+DATASET="STAD"  
 # Omic-modal: snn; mlp; mmlp
 # Path-modal: deepset; amil; tmil; amisl; clam-sb; clam-mb; mqp
 # Muti-modal: mcat; cmta; cfbct; mbct; motcat; porpoise; survpath; ponet; mgct

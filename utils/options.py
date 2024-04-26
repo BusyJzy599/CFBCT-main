@@ -17,7 +17,7 @@ def process_args():
     parser.add_argument('--organ',           type=str, default="TCGA")
 
     parser.add_argument('--b',           type=float, default=0.0)
-    parser.add_argument('--W_k',           type=float, default=1.0)
+    parser.add_argument('--W_k',           type=float, default=0.6)
     parser.add_argument('--ema',           type=float, default=0.9)
     parser.add_argument('--tmp',           type=float, default=0.1)
     parser.add_argument('--pooling',     type=str, default="MQP")
