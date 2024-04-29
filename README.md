@@ -133,10 +133,10 @@ To download molecular feature data and other clinical metadata, please refer to 
 To evaluate the performance of the algorithm, we performed 5-fold cross-validation on each dataset (stratified by the location where the histologic slices were collected). Splits for each cancer type can be found in the `splits` folder, each containing splits_{k}.csv for k = 1 to 5. In each splits_{k}.csv, the first column corresponds to the TCGA case IDs used for training, and the second column corresponds to the TCGA case IDs used for validation.
 
 # Running Example Experiment
-The method proposed in this work can be tested on different cancer samples by running the example code in `Example.ipynb`. First, you need to download the example STAD dataset that we have processed:
-> Download the processed STAD `.h5` files: https://github.com/BusyJzy599/CFBCT-main
-> Download the checkpoint of CFBCT: https://github.com/BusyJzy599/CFBCT-main
-After modifying the parameter `ckp_base=<path to the checkpoint>` and saving all `.h5` files to `path_h5`, proceed to run `Example.ipynb`.
+The method proposed in this work can be tested on different cancer samples by running the example code in `Example.ipynb`. First, you need to download the example COADREAD (n=294) dataset that we have processed:
+- Download the processed COADREAD `.h5` files: https://drive.google.com/drive/folders/1qVl0wgItd2AcNswM2eVL4mOnkyPaWkrb?usp=sharing
+- Download the checkpoint of CFBCT: https://drive.google.com/file/d/1af_sGLlwuokSxpVRpUyOcZp3KFfnYSQ4/view?usp=sharing
+After modifying the parameter `ckp_base=<path to the checkpoint>` and saving all `.h5` files to `path_h5` dir, proceed to run `Example.ipynb`.
 
 # Citation
 

@@ -109,7 +109,7 @@ def generate_loss_fn(args):
                     "surv_loss_g": NLLSurvLoss(alpha=args.alpha_surv),
                     "surv_loss_p": NLLSurvLoss(alpha=args.alpha_surv),
                     "kl_loss":nn.KLDivLoss(reduction='batchmean'),
-                    "ct_loss":CenterLoss(num_classes=4,feat_dim=256)
+                    # "ct_loss":CenterLoss(num_classes=4,feat_dim=256)
                     }
             elif args.model_type=='mbct':
                 loss_fn = {

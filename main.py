@@ -25,7 +25,7 @@ ORGANIZE="TCGA" # TCGA; CPTAC
 # Dataset root dir
 BASE_DIR=f"/mnt/jzy8T/jzy/{ORGANIZE}"
 # Dataset: BLCA; BRCA; LUAD; UCEC; GBMLGG; COAD; HNSC; STAD; 
-DATASET="STAD"  
+DATASET="COAD"  
 # Omic-modal: snn; mlp; mmlp
 # Path-modal: deepset; amil; tmil; amisl; clam-sb; clam-mb; mqp
 # Muti-modal: mcat; cmta; cfbct; mbct; motcat; porpoise; survpath; ponet; mgct
@@ -39,11 +39,11 @@ args.apply_sig=True
 # Save model? default: False 
 args.save_pkl=False
 # Save model checkpoints? default: False 
-args.save_ckp=False
+args.save_ckp=True
 # 
 args.data_root_dir=f"{BASE_DIR}/{DATASET}"
 args.split_dir=f"{ORGANIZE.lower()}_{DATASET.lower()}"
-args.description=''
+args.description='upload'
 
 
 
